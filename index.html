@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Comic</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <img id="comic" src="01.jpg">
+
+  <script>
+    let page = 1;
+    const total = 11;
+    const img = document.getElementById("comic");
+
+    document.body.onclick = () => {
+      page = page < total ? page + 1 : 1;
+      img.src = String(page).padStart(2, "0") + ".jpg";
+    };
+  </script>
+</body>
+</html>
