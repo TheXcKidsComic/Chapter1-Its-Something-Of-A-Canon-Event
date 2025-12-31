@@ -43,7 +43,7 @@ button:hover {
 <body>
   <div class="container">
     <button id="prev">&#8592;</button>
-    <img id="comic" src="01.jpg">
+    <img id="comic" src="01.png">
     <button id="next">&#8594;</button>
   </div>
 
@@ -53,7 +53,7 @@ button:hover {
     const img = document.getElementById("comic");
 
     function showPage() {
-      img.src = String(page).padStart(2, "0") + ".jpg";
+      img.src = String(page).padStart(2, "0") + ".png";
     }
 
     document.getElementById("next").onclick = () => {
