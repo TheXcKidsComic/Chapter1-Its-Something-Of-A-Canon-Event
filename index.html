@@ -19,7 +19,7 @@
   </style>
 </head>
 <body>
-  <img id="comic" src="01.jpg">
+  <img id="comic" src="01.png">
 
   <script>
     let page = 1;
@@ -28,7 +28,7 @@
 
     document.body.onclick = () => {
       page = page < total ? page + 1 : 1;
-      img.src = String(page).padStart(2, "0") + ".jpg";
+      img.src = String(page).padStart(2, "0") + ".png";
     };
   </script>
 </body>
